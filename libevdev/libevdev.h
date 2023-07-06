@@ -24,6 +24,9 @@
 
 #ifndef LIBEVDEV_H
 #define LIBEVDEV_H
+
+#include <linux/input.h>
+
 extern int libevdev_event_code_from_name(unsigned int type, const char *name);
 extern const char * libevdev_event_code_get_name(unsigned int type, unsigned int code);
 #endif
