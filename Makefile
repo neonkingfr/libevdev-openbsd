@@ -20,7 +20,7 @@ PKGCONFIG=	libevdev.pc
 
 includes: _SUBDIRUSE
 	mkdir -p ${DESTDIR}${INCSDIR}/libevdev
-	cd ${.CURDIR}; for i in ${INCS}; do \
+	cd ${.CURDIR}/libevdev; for i in ${INCS}; do \
 	    j="cmp -s $$i ${DESTDIR}${INCSDIR}/$$i || \
 		${INSTALL_DATA} $$i ${DESTDIR}${INCSDIR}/libevdev"; \
 		echo "\tinstalling $$i"; \
